@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "global";
+@import "mixin";
+@import "veraibles";
+
+#header {
+  padding: 15px 0;
+  background: $fon;
+
+  .header {
+    @include space();
+
+    h4 {
+      font-size: 14px;
+      line-height: 150%;
+      color: #E5E5E5;
+    }
+
+    &--nav {
+      @include space();
+      width: 400px;
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF;
+      }
+    }
+
+    &--register {
+      @include space();
+      width: 260px;
+    }
+  }
+
+}
+
+#hero {
+  .hero {
+    @include space();
+    padding: 30px 0;
+
+    &--nav {
+      @include space();
+      width: 300px;
+
+      a {
+        font-weight: 700;
+        font-size: 16px;
+      }
+    }
+
+    &--inpute {
+      position: relative;
+
+      input {
+        width: 380px;
+        height: 44px;
+        border-radius: 10px;
+        font-size: 15px;
+        padding-left: 10px;
+      }
+
+      a {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+      }
+
+      input::placeholder {
+        padding-left: 10px;
+      }
+    }
+
+    &--two {
+      display: flex;
+
+      h5 {
+        padding-left: 10px;
+      }
+
+    }
+  }
+}
+
+#fon {
+  background: #17696A;
+  padding: 10px 0;
+
+  .fon {
+    h4 {
+      text-align: center;
+      font-weight: 900;
+      font-size: 12px;
+      color: #E5E5E5;
+
+      span {
+        font-weight: 400;
+        font-size: 12px;
+        color: #E5E5E5;
+      }
+    }
+  }
+}
+
+#menswear {
+  padding: 0 0;
+
+  .menswear {
+    position: relative;
+
+    img {
+      width: 111%;
+      margin-left: -70px;
+    }
+
+    h2 {
+      position: absolute;
+      top: 20%;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      position: absolute;
+      top: 30%;
+      letter-spacing: 1px;
+      font-weight: 900;
+      font-size: 72px;
+    }
+
+    &--btn {
+      button {
+        position: absolute;
+        @include one();
+        top: 56%;
+      }
+    }
+
+    &--two {
+      button {
+        position: absolute;
+        padding: 10px 20px;
+        color: #E5E5E5;
+        background: #17696A;
+        border-radius: 4px;
+        top: 56%;
+        transition: .4s;
+        left: 10%;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+
+        &:hover {
+          background: transparent;
+          border: 2px solid #02897A;
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &--number {
+      position: absolute;
+      top: 70%;
+      @include around();
+      width: 700px;
+
+      h3 {
+        padding-right: 150px;
+      }
+    }
+  }
+}
+
+#swipers {
+  .swipers {
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

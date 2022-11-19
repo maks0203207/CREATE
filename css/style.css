@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+#header {
+  padding: 15px 0;
+  background: #1E212C;
+}
+#header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header h4 {
+  font-size: 14px;
+  line-height: 150%;
+  color: #E5E5E5;
+}
+#header .header--nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+#header .header--nav a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+#header .header--register {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
+}
+
+#hero .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+#hero .hero--nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+#hero .hero--nav a {
+  font-weight: 700;
+  font-size: 16px;
+}
+#hero .hero--inpute {
+  position: relative;
+}
+#hero .hero--inpute input {
+  width: 380px;
+  height: 44px;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+#hero .hero--inpute a {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+#hero .hero--inpute input::placeholder {
+  padding-left: 10px;
+}
+#hero .hero--two {
+  display: flex;
+}
+#hero .hero--two h5 {
+  padding-left: 10px;
+}
+
+#fon {
+  background: #17696A;
+  padding: 10px 0;
+}
+#fon .fon h4 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 12px;
+  color: #E5E5E5;
+}
+#fon .fon h4 span {
+  font-weight: 400;
+  font-size: 12px;
+  color: #E5E5E5;
+}
+
+#menswear {
+  padding: 0 0;
+}
+#menswear .menswear {
+  position: relative;
+}
+#menswear .menswear img {
+  width: 111%;
+  margin-left: -70px;
+}
+#menswear .menswear h2 {
+  position: absolute;
+  top: 20%;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+#menswear .menswear h1 {
+  position: absolute;
+  top: 30%;
+  letter-spacing: 1px;
+  font-weight: 900;
+  font-size: 72px;
+}
+#menswear .menswear--btn button {
+  position: absolute;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  background: #17696A #17696A;
+  border-radius: 4px;
+  transition: 0.4s;
+  top: 56%;
+}
+#menswear .menswear--btn button:hover {
+  border: 2px solid #02897A;
+  transform: scale(1.1);
+}
+#menswear .menswear--two button {
+  position: absolute;
+  padding: 10px 20px;
+  color: #E5E5E5;
+  background: #17696A;
+  border-radius: 4px;
+  top: 56%;
+  transition: 0.4s;
+  left: 10%;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+#menswear .menswear--two button:hover {
+  background: transparent;
+  border: 2px solid #02897A;
+  transform: scale(1.1);
+}
+#menswear .menswear--number {
+  position: absolute;
+  top: 70%;
+  display: flex;
+  justify-content: space-around;
+  width: 700px;
+}
+#menswear .menswear--number h3 {
+  padding-right: 150px;
+}
+
+#swipers .swipers .swiper {
+  width: 100%;
+  height: 100%;
+}
+#swipers .swipers .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#swipers .swipers .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
