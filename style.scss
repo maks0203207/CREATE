@@ -7,6 +7,7 @@
   padding: 15px 0;
   background: $fon;
 
+
   .header {
     @include space();
 
@@ -34,6 +35,9 @@
   }
 
 }
+
+
+
 
 #hero {
   .hero {
@@ -74,6 +78,7 @@
 
     &--two {
       display: flex;
+
 
       h5 {
         padding-left: 10px;
@@ -120,7 +125,10 @@
       font-weight: 700;
       font-size: 18px;
       letter-spacing: 1px;
+
+
     }
+
 
     h1 {
       position: absolute;
@@ -173,38 +181,488 @@
   }
 }
 
-#swipers {
-  .swipers {
-    .swiper {
-      width: 100%;
-      height: 100%;
+//CONTAINER
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+
+  h3 {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 90%;
+}
+
+#new-arrivals {
+  padding: 100px 0;
+
+  .new-arrivals {
+    @include colum();
+
+    h2 {
+      font-weight: 900;
+      font-size: 46px;
+      color: #1E212C;
+      line-height: 130%;
+    }
+
+    h4 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+
+      span {
+        color: #17696A;
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration: underline;
+      }
+    }
+
+
+  }
+}
+
+//<!--SWIPER-->
+
+#images {
+  .images {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+
+    &--one {
+      img {
+        width: 90%;
+        height: 500px;
+      }
+
+      h3 {
+        position: absolute;
+        top: 10%;
+        left: 4%;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        top: 20%;
+        left: 4%;
+        position: absolute;
+        font-weight: 900;
+        font-size: 32px;
+      }
+
+      button {
+        position: absolute;
+        top: 40%;
+        left: 4%;
+        @include btn();
+      }
+
+    }
+
+    &--two {
+      position: relative;
+
+      img {
+        width: 130%;
+        //height: 900px;
+        //margin: 0 10px;
+      }
+
+      h4 {
+        position: absolute;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #1E212C;
+        top: 10%;
+        left: 4%;
+      }
+
+    }
+  }
+}
+
+#popular {
+  .popular {
+    h1 {
+      text-align: center;
     }
 
     .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
+      h3 {
+        font-weight: 700;
+        font-size: 20px;
+        color: #1E212C;
+        text-align: center;
+      }
+    }
+  }
+}
 
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
+#trend {
+  background: #E5E8ED;
+  min-height: 100vh;
+
+  .trend {
+    padding: 100px 0;
+
+    h1 {
+      padding-bottom: 20px;
+      font-weight: 900;
+      font-size: 46px;
+      line-height: 130%;
+      color: #1E212C;
+    }
+
+    &--general {
       display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
       align-items: center;
+      justify-content: space-evenly;
+
+      &--one {
+        h3 {
+          padding-bottom: 15px;
+          font-weight: 400;
+          font-size: 18px;
+          color: #424551;
+        }
+
+        h2 {
+          font-weight: 700;
+          font-size: 24px;
+          color: #1E212C;
+        }
+      }
+
+
+      &--two {
+        h3 {
+          padding-bottom: 15px;
+          font-weight: 400;
+          font-size: 18px;
+          color: #424551;
+        }
+
+        h2 {
+          font-weight: 700;
+          font-size: 24px;
+          color: #1E212C;
+        }
+      }
+
+      &--three {
+        h3 {
+          padding-bottom: 15px;
+          font-weight: 400;
+          font-size: 18px;
+          color: #424551;
+        }
+
+        h2 {
+          font-weight: 700;
+          font-size: 24px;
+          color: #1E212C;
+        }
+      }
     }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    &--btn {
+      margin: 50px 0;
+      padding-left: 47%;
+
+      button {
+        @include btn();
+      }
     }
+
+
+  }
+}
+
+#discount {
+  padding: 30px 0;
+  .discount {
+    display: flex;
+    justify-content: space-evenly;
+
+
+  }
+}
+
+#enjoy {
+  background: #1E212C;
+  padding: 30px 0;
+  .enjoy {
+    display: flex;
+
+    img {
+      width: 400px;
+      ////height: 10%;
+
+    }
+
+    &--even {
+
+      h1 {
+        color: #FFFFFF;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 130%;
+        padding-left: 160px;
+      }
+
+      &--in {
+        display: flex;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}
+
+#blocks {
+  padding: 30px 0;
+
+  .blocks {
+    @include colum-between();
+
+    &--one {
+      @include h3();
+      @include h5();
+    }
+
+    &--two {
+      @include h3();
+      @include h5();
+    }
+
+    &--three {
+      @include h3();
+      @include h5();
+    }
+
+    &--four {
+      @include h3();
+      @include h5();
+    }
+  }
+}
+
+#store {
+  padding: 100px 0;
+
+  .store {
+    @include space();
+
+    &--one {
+      h3 {
+        @include h3();
+      }
+
+      h1 {
+        padding: 15px 0;
+        font-weight: 900;
+        font-size: 46px;
+        color: #1E212C;
+      }
+
+      button {
+        @include one();
+      }
+    }
+  }
+}
+
+#news {
+  padding: 100px 0;
+
+  .news {
+    &--btn {
+      @include space();
+
+      button {
+        @include btn();
+      }
+
+      h1 {
+        margin-bottom: 30px;
+        font-weight: 900;
+        font-size: 46px;
+        color: #1E212C
+      }
+    }
+
+    &--gen {
+      @include around();
+
+      &--one {
+        width: 600px;
+        height: 482px;
+        box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        border-radius: 4px;
+
+        &--text {
+          h3 {
+            @include h3();
+          }
+
+          h4 {
+            @include h4();
+          }
+
+          h5 {
+            @include h5();
+          }
+        }
+      }
+
+      &--two {
+        width: 600px;
+        height: 482px;
+        box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        border-radius: 4px;
+
+        &--text {
+          h3 {
+            @include h3();
+          }
+
+          h4 {
+            @include h4();
+          }
+
+          h5 {
+            @include h5();
+          }
+        }
+      }
+    }
+
+
+  }
+
+
+}
+
+#national {
+  .national {
+    @include space();
+
+    img {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+#reguest {
+  background: #F4F5F7;
+  min-height: 60vh;
+
+  .reguest {
+    @include space();
+    width: 100%;
+    position: relative;
+    padding: 50px 0;
+
+    &--gen {
+      &--one {
+
+        h1 {
+          font-weight: 900;
+          font-size: 46px;
+          color: #1E212C;
+          margin-bottom: 30px;
+        }
+
+        h4 {
+          @include h4();
+        }
+      }
+
+      &--buttons {
+        padding: 30px 10px;
+        @include around();
+        width: 217px;
+
+        button {
+          @include btn();
+        }
+      }
+
+      &--input {
+        h3 {
+          @include h3();
+          margin-bottom: 30px;
+        }
+
+        input {
+          padding: 15px 15px;
+          background: #FFFFFF;
+          border: 1px solid #D7DADD;
+          border-radius: 4px;
+          margin-bottom: 25px;
+        }
+
+        button {
+          position: absolute;
+          @include btn();
+        }
+
+
+      }
+    }
+
+
+  }
+}
+
+#footer {
+  padding: 30px 0;
+  background: #1E212C;
+  width: 100%;
+  min-height: 40vh;
+
+  .footer {
+    @include space ();
+    width: 90%;
+    h4{
+      @include evenly();
+      flex-direction: column;
+      font-weight: 400;
+      font-size: 16px;
+      color: white;
+    }
+
+    h5 {
+      font-weight: 400;
+      font-size: 16px;
+      color: white;
+      padding: 10px 0;
+    }
+
+
   }
 }
